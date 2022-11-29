@@ -20,10 +20,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class waaLogin extends AppCompatActivity {
-    Button boton;
-    Button botonS;
-    TextView text;
+    Button botonR;
     Button login;
+    Button botonc;
     static String MESSAGE_NOMBRE, TAG;
 
 
@@ -31,10 +30,17 @@ public class waaLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_waa_login);
-        botonS = findViewById(R.id.salir);
+        botonR = findViewById(R.id.registrarse);
         login = findViewById(R.id.login);
+        botonc = findViewById(R.id.cancel);
 
-        botonS.setOnClickListener(new View.OnClickListener() {
+        botonR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Registrarse();
+            }
+        });
+        botonc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 salir();
@@ -65,9 +71,13 @@ public class waaLogin extends AppCompatActivity {
     public void salir() {
         System.exit(0);
     }
+    public void Registrarse() {
+        Intent intent = new Intent(this, waaSignup.class);
+        activityResult.launch(intent);
+    }
 
     public void loginApp() {
-        Intent intent = new Intent(this, waaSignup.class); //This llama a la propia magina y se crea la otra
+        Intent intent = new Intent(this, waaSplash.class);
         activityResult.launch(intent);
     }
 

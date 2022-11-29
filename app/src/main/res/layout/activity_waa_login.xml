@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="-70px"
+    android:orientation="vertical"
     tools:context=".waaLogin"
     android:background="@drawable/radient">
 
@@ -25,12 +26,12 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/TILusername"
+        android:id="@+id/usuario"
         app:layout_constraintStart_toStartOf="@id/leftGuide"
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
         android:layout_marginTop="28dp"
         app:layout_constraintTop_toBottomOf="@id/icono"
-        app:startIconDrawable="@drawable/waa_launcher_background">
+        app:startIconDrawable="@drawable/ic_baseline_people_alt_24">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -45,13 +46,13 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/TILpassword"
+        android:id="@+id/contraseña"
         android:layout_marginTop="3dp"
-        app:layout_constraintTop_toBottomOf="@id/TILusername"
+        app:layout_constraintTop_toBottomOf="@id/usuario"
         app:layout_constraintStart_toStartOf="@id/leftGuide"
         app:layout_constraintEnd_toEndOf="@id/rightGuide"
         app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/waa_launcher_background"
+        app:startIconDrawable="@drawable/ic_baseline_key_24"
         >
         <EditText
             android:layout_width="match_parent"
@@ -67,7 +68,7 @@
         android:text="Login"
         app:layout_constraintStart_toStartOf="@id/leftGuide"
         app:layout_constraintEnd_toStartOf="@id/cancel"
-        app:layout_constraintTop_toBottomOf="@id/TILpassword"
+        app:layout_constraintTop_toBottomOf="@id/contraseña"
         style="@style/botonmolon"
         android:layout_marginRight="8dp"
         android:backgroundTint="@color/marron">
@@ -86,16 +87,16 @@
     </Button>
 
     <Button
-        android:id="@+id/salir"
+        android:id="@+id/registrarse"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1530px"
+        android:layout_marginTop="1130px"
         style="@style/botonmolon"
         android:backgroundTint="@color/marron"
-        android:text="Salir"/>
+        android:text="Registrarse"/>
 
 
 
