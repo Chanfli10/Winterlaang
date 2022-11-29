@@ -4,6 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".waaLogin">
+    android:layout_marginTop="-70px"
+    tools:context=".waaLogin"
+    android:background="@drawable/radient">
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        app:circularflow_radiusInDP="50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/icono">
+
+    </ImageView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TILusername"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@id/icono"
+        app:startIconDrawable="@drawable/waa_launcher_background">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Usuario"
+            >
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TILpassword"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/TILusername"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintEnd_toEndOf="@id/rightGuide"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/waa_launcher_background"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            >
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    />
+    <Button
+        android:id="@+id/login"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="@id/leftGuide"
+        app:layout_constraintEnd_toStartOf="@id/cancel"
+        app:layout_constraintTop_toBottomOf="@id/TILpassword"
+        style="@style/botonmolon"
+        android:layout_marginRight="8dp"
+        android:backgroundTint="@color/marron">
+
+    </Button>
+
+    <Button
+        android:id="@+id/cancel"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@id/rightGuide"
+        app:layout_constraintTop_toTopOf="@id/login"
+        style="@style/botonmolon"
+        android:backgroundTint="@color/marron"
+        android:layout_marginLeft="8dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/salir"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1530px"
+        style="@style/botonmolon"
+        android:backgroundTint="@color/marron"
+        android:text="Salir"/>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/leftGuide"
+        app:layout_constraintGuide_percent="0.2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rightGuide"
+        app:layout_constraintGuide_percent="0.8"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

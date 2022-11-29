@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="botonmolon" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="strokeWidth">3dp</item>
+        <item name="strokeColor">#FFAE37</item>
+    </style>
+</resources>
