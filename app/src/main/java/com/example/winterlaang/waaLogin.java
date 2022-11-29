@@ -53,13 +53,13 @@ public class waaLogin extends AppCompatActivity {
             }
         });
 
-        ImageView mMessi = findViewById(R.id.icono);
+        ImageView mfoto = findViewById(R.id.icono);
 
         Glide.with(this)
                 .load(R.drawable.splash)
                 .transition(DrawableTransitionOptions.withCrossFade(100))
                 .circleCrop()
-                .into(mMessi);
+                .into(mfoto);
 
         ImageView thunder = findViewById(R.id.icono);
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.zoom);

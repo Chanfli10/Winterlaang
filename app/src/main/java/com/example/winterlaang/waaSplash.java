@@ -22,7 +22,6 @@ public class waaSplash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_waa_splash);
         openApp();
-        texto = findViewById(R.id.first);
 
         ImageView mfondo = findViewById(R.id.fondo);
         Glide.with(this)
